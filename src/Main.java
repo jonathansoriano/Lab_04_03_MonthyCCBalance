@@ -1,16 +1,18 @@
 public class Main {
     public static void main(String[ ] args) {
 
-        int creditBalance = 5000;
+        double creditBalance = 5000;
         double INTEREST_RATE = .17;
-        double month1Interest = 0;
-        double month2Interest = 0;
-        double month1Total = 0;
+        double month1Interest;
+        double month2Interest;
+        double month1Total;
 
         month1Interest = creditBalance * INTEREST_RATE;
         month1Total = month1Interest + creditBalance;
         month2Interest = month1Total * INTEREST_RATE;
 
-        System.out.println("The interest for month 1 is " + month1Interest + ". " + "The for month 2 is " + month2Interest);
+
+        System.out.printf("The interest for month 1 is %.2f\n", month1Interest);
+        System.out.printf("The interest for month 2 is %.2f\n", month2Interest);
     }
 }
